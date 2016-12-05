@@ -5,7 +5,6 @@
     var store = this;
     store.products = [];
     $http.get("./store-products.json").then(function(resp){
-      console.log(resp.data);
       store.products = resp.data;
     });
     
